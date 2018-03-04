@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="edu.whu.iss.bean.Student" table="student" lazy="false">
+		<id name="id" column="_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="username" column="username" length = "100"/>
+		<property name="password" column="password" length = "100"/>
+		<property name="nickname" column="nickname" length = "100"/>
+		<property name="email" column="email" />
+		<property name="number" column="stu_number" />
+		<property name="realname" column="realname" length = "100"/>
+		<property name="gender" column="gender" length = "100"/>
+		<property name="classname" column="class" />
+		<property name="region" column="region" />
+		<property name="school" column="school" />
+		<property name="phone" column="phone" />
+		<property name="signature" column="signature" />
+		<property name="imageURL" column="imageURL" />
+		<property name="token" column="token" length = "100"/>
+		<property name="grade" column="grade" length = "100"/>
+		<set name="issues" cascade="delete" order-by="time desc">
+			<key column="stno"></key>
+			<one-to-many class="edu.whu.iss.bean.Issue" />
+		</set>
+		
+		<set name="courses" table="student_course" lazy="false">
+			<key column="stno"></key>
+			<many-to-many class="edu.whu.iss.wen.bean.Course" column="cno" />
+		</set>
+		<set name="ranks" cascade="delete" order-by="time desc">
+			<key column="sno"/>
+			<one-to-many class="edu.whu.iss.bean.Rank"/>
+		</set>
+		<many-to-one name="collegeStudent" class="edu.whu.iss.sd.bean.CollegeStudent"
+			column="cno"/>
+		<many-to-one name="parent" class="edu.whu.iss.lu.bean.Parent"
+			column="pno"/>
+		<many-to-one name="adminClass" column="acno"
+			class="edu.whu.iss.wen.bean.AdminClass" cascade="save-update">			
+		</many-to-one>
+		<set name="learnings" cascade="delete" order-by="time desc">
+			<key column="sno"/>
+			<one-to-many class="edu.whu.iss.bean.CourseLearning"/>
+		</set>
+		<set name="totalLearnings" cascade="delete" order-by="id desc">
+			<key column="sno"/>
+			<one-to-many class="edu.whu.iss.bean.TotalCourseLearning"/>
+		</set>
+		<set name="exCateDetails" lazy="true" cascade="delete">
+			<key column="sno"/>
+			<one-to-many class="edu.whu.iss.bean.PrivateExCateDetail"/>
+		</set>
+		<set name="exDetails" lazy="true" cascade="all">
+			<key column="sno"/>
+			<one-to-many class="edu.whu.iss.bean.PrivateExDetail" />
+		</set>
+		<set name="weaknessKnowledges" table="student_knowledge" cascade="delete,save-update" lazy="false">
+			<key column="sid"></key>
+			<many-to-many class="edu.whu.iss.wen.bean.Knowledge" column="kid"></many-to-many>
+		</set>
+	</class>
+</hibernate-mapping>

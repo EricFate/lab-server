@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SignupServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.SignupServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ImageUploadServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.ImageUploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadAllLessonServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoadAllLessonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadChapterServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoadChapterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadMyLessonServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoadMyLessonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadSubjectDetailServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoadSubjectDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SignitureChangeServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.SignitureChangeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadQuestionsServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoadQuestionsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadDiscoverServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoadDiscoverServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AskQuestionServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.AskQuestionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadAnswersServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoadAnswersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WriteAnswerServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.WriteAnswerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AgreeAnswerServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.AgreeAnswerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetUserInfoServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetUserInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RequestTokenServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.RequestTokenServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetContactsServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetContactsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryContactsServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.QueryContactsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetGroupNamesServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetGroupNamesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddFriendServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.AddFriendServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InfoChangeServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.InfoChangeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JoinGroupServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.JoinGroupServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LearnCourseServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LearnCourseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckIsLearningServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.CheckIsLearningServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SubmitRankServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.SubmitRankServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadRanksServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoadRanksServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RequestFriendServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.RequestFriendServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetFriendRequestServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetFriendRequestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetDetailedInfoServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetDetailedInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetRequestCountServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetRequestCountServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.Register</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginIn</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.LoginIn</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseUpload</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.CourseUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetCourseInfo</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetCourseInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ImageUpload</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.ImageUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChapterUpload</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.ChapterUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetSingleCourseInfo</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetSingleCourseInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetChapterInfo</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetChapterInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetSingleChapterInfo</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetSingleChapterInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LessonUpload</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.LessonUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetLessonInfo</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetLessonInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetSingleLessonInfo</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetSingleLessonInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeacherInfoRevise</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.TeacherInfoRevise</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseInfoRevise</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.CourseInfoRevise</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CoverUpload</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.CoverUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChapterInfoRevise</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.ChapterInfoRevise</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LessonInfoRevise</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.LessonInfoRevise</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetLessonVideo</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetLessonVideo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadLessonDetailServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoadLessonDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CollegeLoginServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.CollegeLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddVideoServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.AddVideoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetVideoServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.GetVideoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ImageServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.ImageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateCollegeStudentServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.updateCollegeStudentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetStudentCourseInfo</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.GetStudentCourseInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddQuestionServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.AddQuestionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetQuestionServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.GetQuestionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetAnswerServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.GetAnswerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAnswerServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.AddAnswerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddVideoPlayNumber</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.AddVideoPlayNumber</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadMyQuestionsServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoadMyQuestionsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadMyAnswersServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoadMyAnswersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChapterNumberPlus</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.ChapterNumberPlus</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LessonNumberPlus</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.LessonNumberPlus</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteIssueServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.DeleteIssueServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteAnswerServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.DeleteAnswerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadMyRanksServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.LoadMyRanksServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteRankServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.DeleteRankServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetMyVideoServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.GetMyVideoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RemoveVideoServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.RemoveVideoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>IsUsernameUnique</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.IsUsernameUnique</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetClass</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetClass</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoadUnpairStudentServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.LoadUnpairStudentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddPairStudentServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.AddPairStudentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetPairStudentInfoServlet</servlet-name>
+    <servlet-class>edu.whu.iss.sd.servlet.GetPairStudentInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetGroupInfoServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetGroupInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PasswordRevise</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.PasswordRevise</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetStudentList</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetStudentList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateClass</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.CreateClass</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadCourseLearningServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.UploadCourseLearningServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadMessageRecordServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.UploadMessageRecordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetClassInfo</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetClassInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetCourseLearning</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetCourseLearning</servlet-class>
+  </servlet>
+  <!--<servlet>-->
+    <!--<description>This is the description of my J2EE component</description>-->
+    <!--<display-name>This is the display name of my J2EE component</display-name>-->
+    <!--<servlet-name>GetTempMessage</servlet-name>-->
+    <!--<servlet-class>edu.whu.iss.wen.servlet.GetTempMessage</servlet-class>-->
+  <!--</servlet>-->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetTotalCourseLearning</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetTotalCourseLearning</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetTotalMessageRecord</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetTotalMessageRecord</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetStudyInfo</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetStudyInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetMyClassServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetMyClassServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetSingleIssue</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetSingleIssue</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetSingleAnswer</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetSingleAnswer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetClassMemberByClassServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetClassMemberByClassServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetGroupsServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetGroupsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetAllLessonInfo</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetAllLessonInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>VideoImageUpload</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.VideoImageUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteLesson</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.DeleteLesson</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteChapter</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.DeleteChapter</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteCourse</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.DeleteCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ParentGetStudyInfo</servlet-name>
+    <servlet-class>edu.whu.iss.lu.servlet.ParentGetStudyInfo</servlet-class>
+  </servlet>
+  <!--<servlet>-->
+    <!--<description>This is the description of my J2EE component</description>-->
+    <!--<display-name>This is the display name of my J2EE component</display-name>-->
+    <!--<servlet-name>DeleteChapter</servlet-name>-->
+    <!--<servlet-class>edu.whu.iss.wen.servlet.DeleteChapter</servlet-class>-->
+  <!--</servlet>-->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoticeUpload</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.NoticeUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetNotice</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetNotice</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteNotice</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.DeleteNotice</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetTest</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetTest</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateMyClass</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.CreateMyClass</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetExerciseServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetExerciseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetExerciseCategoryServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetExerciseCategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetSingleExercise</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetSingleExercise</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteClass</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.DeleteClass</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetClassNotice</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetClassNotice</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadTest</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.UploadTest</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadExerciseResultServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.UploadExerciseResultServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetExerciseCatagory</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetExerciseCatagory</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetExercise</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetExercise</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JoinClassServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.JoinClassServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetAdminClassServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetAdminClassServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetStudentRequest</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetStudentRequest</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddStudent</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.AddStudent</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetStudent</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetStudent</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetNoticeServlet</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetNoticeServlet</servlet-class>
+  </servlet>
+  <!--<servlet>-->
+    <!--<description>This is the description of my J2EE component</description>-->
+    <!--<display-name>This is the display name of my J2EE component</display-name>-->
+    <!--<servlet-name>imageUploadServlet</servlet-name>-->
+    <!--<servlet-class>edu.whu.iss.lu.servlet.imageUploadServlet</servlet-class>-->
+  <!--</servlet>-->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ImageUpServlet</servlet-name>
+    <servlet-class>edu.whu.iss.lu.servlet.ImageUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetIssue</servlet-name>
+    <servlet-class>edu.whu.iss.servlet.GetIssueServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelStuReqServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.DelStuReqServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>VerifyPhoneOrEmailServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.VerifyPhoneOrEmailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewPasswordServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.NewPasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadKnowledgeServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.UploadKnowledgeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetKnowledgeServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetKnowledgeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteKnowledgeServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.DeleteKnowledgeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetKnowledgeByInfo</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetKnowledgeByInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadFillInBlankExercise</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.UploadFillInBlankExercise</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadMultipleChoicesExercise</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.UploadMultipleChoicesExercise</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetFillInBlankExercisesServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetFillInBlankExercisesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetMultipleChoicesExercisesServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetMultipleChoicesExercisesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteExerciseServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.DeleteExerciseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExerciseImageUploadServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.FillInBlankExerciseImageUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MultipleChoicesExerciseImageUpload</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.MultipleChoicesExerciseImageUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadKnowledgeRelationServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.UploadKnowledgeRelationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddStuden</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.AddStudent</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewPasswordServle</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.NewPasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginI</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.LoginIn</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetKnowledgeRelationshipServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetKnowledgeRelationship</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetKnowledgeRelationships</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.GetKnowledgeRelationships</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FillInBlankExerciseImageServlet</servlet-name>
+    <servlet-class>edu.whu.iss.wen.servlet.FillInBlankExerciseImageServlet</servlet-class>
+  </servlet>
+  <!--<servlet>-->
+    <!--<description>This is the description of my J2EE component</description>-->
+    <!--<display-name>This is the display name of my J2EE component</display-name>-->
+    <!--<servlet-name>UploadLetterCodeServlet</servlet-name>-->
+    <!--<servlet-class>edu.whu.iss.wen.servlet.Up</servlet-class>-->
+  <!--</servlet>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignupServlet</servlet-name>
+    <url-pattern>/SignupServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageUploadServlet</servlet-name>
+    <url-pattern>/ImageUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadAllLessonServlet</servlet-name>
+    <url-pattern>/LoadAllLessonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadChapterServlet</servlet-name>
+    <url-pattern>/LoadChapterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadMyLessonServlet</servlet-name>
+    <url-pattern>/LoadMyLessonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadSubjectDetailServlet</servlet-name>
+    <url-pattern>/LoadSubjectDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignitureChangeServlet</servlet-name>
+    <url-pattern>/SignitureChangeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadQuestionsServlet</servlet-name>
+    <url-pattern>/LoadQuestionsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadDiscoverServlet</servlet-name>
+    <url-pattern>/LoadDiscoverServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AskQuestionServlet</servlet-name>
+    <url-pattern>/AskQuestionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadAnswersServlet</servlet-name>
+    <url-pattern>/LoadAnswersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WriteAnswerServlet</servlet-name>
+    <url-pattern>/WriteAnswerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AgreeAnswerServlet</servlet-name>
+    <url-pattern>/AgreeAnswerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUserInfoServlet</servlet-name>
+    <url-pattern>/GetUserInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestTokenServlet</servlet-name>
+    <url-pattern>/RequestTokenServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetContactsServlet</servlet-name>
+    <url-pattern>/GetContactsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryContactsServlet</servlet-name>
+    <url-pattern>/QueryContactsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetGroupNamesServlet</servlet-name>
+    <url-pattern>/GetGroupNamesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddFriendServlet</servlet-name>
+    <url-pattern>/AddFriendServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InfoChangeServlet</servlet-name>
+    <url-pattern>/InfoChangeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JoinGroupServlet</servlet-name>
+    <url-pattern>/JoinGroupServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LearnCourseServlet</servlet-name>
+    <url-pattern>/LearnCourseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckIsLearningServlet</servlet-name>
+    <url-pattern>/CheckIsLearningServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SubmitRankServlet</servlet-name>
+    <url-pattern>/SubmitRankServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadRanksServlet</servlet-name>
+    <url-pattern>/LoadRanksServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestFriendServlet</servlet-name>
+    <url-pattern>/RequestFriendServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetFriendRequestServlet</servlet-name>
+    <url-pattern>/GetFriendRequestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDetailedInfoServlet</servlet-name>
+    <url-pattern>/GetDetailedInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetRequestCountServlet</servlet-name>
+    <url-pattern>/GetRequestCountServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/servlet/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginIn</servlet-name>
+    <url-pattern>/servlet/LoginIn</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseUpload</servlet-name>
+    <url-pattern>/servlet/CourseUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCourseInfo</servlet-name>
+    <url-pattern>/servlet/GetCourseInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageUpload</servlet-name>
+    <url-pattern>/servlet/ImageUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChapterUpload</servlet-name>
+    <url-pattern>/servlet/ChapterUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSingleCourseInfo</servlet-name>
+    <url-pattern>/servlet/GetSingleCourseInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetChapterInfo</servlet-name>
+    <url-pattern>/servlet/GetChapterInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSingleChapterInfo</servlet-name>
+    <url-pattern>/servlet/GetSingleChapterInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LessonUpload</servlet-name>
+    <url-pattern>/servlet/LessonUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetLessonInfo</servlet-name>
+    <url-pattern>/servlet/GetLessonInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSingleLessonInfo</servlet-name>
+    <url-pattern>/servlet/GetSingleLessonInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherInfoRevise</servlet-name>
+    <url-pattern>/servlet/TeacherInfoRevise</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourseInfoRevise</servlet-name>
+    <url-pattern>/servlet/CourseInfoRevise</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CoverUpload</servlet-name>
+    <url-pattern>/servlet/CoverUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChapterInfoRevise</servlet-name>
+    <url-pattern>/servlet/ChapterInfoRevise</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LessonInfoRevise</servlet-name>
+    <url-pattern>/servlet/LessonInfoRevise</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetLessonVideo</servlet-name>
+    <url-pattern>/servlet/GetLessonVideo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadLessonDetailServlet</servlet-name>
+    <url-pattern>/LoadLessonDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CollegeLoginServlet</servlet-name>
+    <url-pattern>/servletc/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/servletc/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddVideoServlet</servlet-name>
+    <url-pattern>/servletc/AddVideoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetVideoServlet</servlet-name>
+    <url-pattern>/servletc/GetVideoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageServlet</servlet-name>
+    <url-pattern>/servletc/ImageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateCollegeStudentServlet</servlet-name>
+    <url-pattern>/servletc/updateCollegeStudentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddQuestionServlet</servlet-name>
+    <url-pattern>/servletc/AddQuestionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetQuestionServlet</servlet-name>
+    <url-pattern>/servletc/GetQuestionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetAnswerServlet</servlet-name>
+    <url-pattern>/servletc/GetAnswerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAnswerServlet</servlet-name>
+    <url-pattern>/servletc/AddAnswerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMyVideoServlet</servlet-name>
+    <url-pattern>/servletc/GetMyVideoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveVideoServlet</servlet-name>
+    <url-pattern>/servletc/RemoveVideoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddVideoPlayNumber</servlet-name>
+    <url-pattern>/servletc/AddVideoPlayNumber</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadMyQuestionsServlet</servlet-name>
+    <url-pattern>/LoadMyQuestionsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadMyAnswersServlet</servlet-name>
+    <url-pattern>/LoadMyAnswersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChapterNumberPlus</servlet-name>
+    <url-pattern>/servlet/ChapterNumberPlus</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LessonNumberPlus</servlet-name>
+    <url-pattern>/servlet/LessonNumberPlus</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteIssueServlet</servlet-name>
+    <url-pattern>/DeleteIssueServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteAnswerServlet</servlet-name>
+    <url-pattern>/DeleteAnswerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadMyRanksServlet</servlet-name>
+    <url-pattern>/LoadMyRanksServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteRankServlet</servlet-name>
+    <url-pattern>/DeleteRankServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IsUsernameUnique</servlet-name>
+    <url-pattern>/servlet/IsUsernameUnique</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetClass</servlet-name>
+    <url-pattern>/servlet/GetClass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoadUnpairStudentServlet</servlet-name>
+    <url-pattern>/servletc/LoadUnpairStudentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPairStudentServlet</servlet-name>
+    <url-pattern>/servletc/AddPairStudentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPairStudentInfoServlet</servlet-name>
+    <url-pattern>/servletc/GetPairStudentInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetGroupInfoServlet</servlet-name>
+    <url-pattern>/GetGroupInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PasswordRevise</servlet-name>
+    <url-pattern>/servlet/PasswordRevise</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetStudentList</servlet-name>
+    <url-pattern>/servlet/GetStudentList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateClass</servlet-name>
+    <url-pattern>/servlet/CreateClass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadCourseLearningServlet</servlet-name>
+    <url-pattern>/UploadCourseLearningServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadMessageRecordServlet</servlet-name>
+    <url-pattern>/UploadMessageRecordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetClassInfo</servlet-name>
+    <url-pattern>/servlet/GetClassInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCourseLearning</servlet-name>
+    <url-pattern>/servlet/GetCourseLearning</url-pattern>
+  </servlet-mapping>
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>GetTempMessage</servlet-name>-->
+    <!--<url-pattern>/servlet/GetTempMessage</url-pattern>-->
+  <!--</servlet-mapping>-->
+  <servlet-mapping>
+    <servlet-name>GetTotalCourseLearning</servlet-name>
+    <url-pattern>/servlet/GetTotalCourseLearning</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetTotalMessageRecord</servlet-name>
+    <url-pattern>/servlet/GetTotalMessageRecord</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetStudyInfo</servlet-name>
+    <url-pattern>/servlet/GetStudyInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMyClassServlet</servlet-name>
+    <url-pattern>/GetMyClassServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSingleIssue</servlet-name>
+    <url-pattern>/servlet/GetSingleIssue</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSingleAnswer</servlet-name>
+    <url-pattern>/servlet/GetSingleAnswer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetClassMemberByClassServlet</servlet-name>
+    <url-pattern>/GetClassMemberByClassServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetGroupsServlet</servlet-name>
+    <url-pattern>/GetGroupsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetAllLessonInfo</servlet-name>
+    <url-pattern>/servlet/GetAllLessonInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VideoImageUpload</servlet-name>
+    <url-pattern>/servlet/VideoImageUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteLesson</servlet-name>
+    <url-pattern>/servlet/DeleteLesson</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteCourse</servlet-name>
+    <url-pattern>/servlet/DeleteCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ParentGetStudyInfo</servlet-name>
+    <url-pattern>/servlet/ParentGetStudyInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteChapter</servlet-name>
+    <url-pattern>/servlet/DeleteChapter</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoticeUpload</servlet-name>
+    <url-pattern>/servlet/NoticeUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetNotice</servlet-name>
+    <url-pattern>/servlet/GetNotice</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteNotice</servlet-name>
+    <url-pattern>/servlet/DeleteNotice</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetTest</servlet-name>
+    <url-pattern>/servlet/GetTest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateMyClass</servlet-name>
+    <url-pattern>/servlet/CreateMyClass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetExerciseServlet</servlet-name>
+    <url-pattern>/GetExerciseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetExerciseCategoryServlet</servlet-name>
+    <url-pattern>/GetExerciseCategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSingleExercise</servlet-name>
+    <url-pattern>/servlet/GetSingleExercise</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteClass</servlet-name>
+    <url-pattern>/servlet/DeleteClass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetClassNotice</servlet-name>
+    <url-pattern>/servlet/GetClassNotice</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadTest</servlet-name>
+    <url-pattern>/servlet/UploadTest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadExerciseResultServlet</servlet-name>
+    <url-pattern>/UploadExerciseResultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetExerciseCatagory</servlet-name>
+    <url-pattern>/servlet/GetExerciseCatagory</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetExercise</servlet-name>
+    <url-pattern>/servlet/GetExercise</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetStudentCourseInfo</servlet-name>
+    <url-pattern>/servletc/GetStudentCourseInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JoinClassServlet</servlet-name>
+    <url-pattern>/JoinClassServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetAdminClassServlet</servlet-name>
+    <url-pattern>/GetAdminClassServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetStudentRequest</servlet-name>
+    <url-pattern>/servlet/GetStudentRequest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddStudent</servlet-name>
+    <url-pattern>/servlet/AddStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetStudent</servlet-name>
+    <url-pattern>/servlet/GetStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetNoticeServlet</servlet-name>
+    <url-pattern>/GetNoticeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageUpServlet</servlet-name>
+    <url-pattern>/lu/ImageUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetIssue</servlet-name>
+    <url-pattern>/servlet/GetIssue</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelStuReqServlet</servlet-name>
+    <url-pattern>/servlet/DelStuReqServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VerifyPhoneOrEmailServlet</servlet-name>
+    <url-pattern>/servlet/VerifyPhoneOrEmailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewPasswordServlet</servlet-name>
+    <url-pattern>/servlet/NewPasswordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadKnowledgeServlet</servlet-name>
+    <url-pattern>/servlet/UploadKnowledgeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetKnowledgeServlet</servlet-name>
+    <url-pattern>/servlet/GetKnowledgeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteKnowledgeServlet</servlet-name>
+    <url-pattern>/servlet/DeleteKnowledgeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetKnowledgeByInfo</servlet-name>
+    <url-pattern>/servlet/GetKnowledgeByInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadFillInBlankExercise</servlet-name>
+    <url-pattern>/servlet/UploadFillInBlankExercise</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadMultipleChoicesExercise</servlet-name>
+    <url-pattern>/servlet/UploadMultipleChoicesExercise</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetFillInBlankExercisesServlet</servlet-name>
+    <url-pattern>/servlet/GetFillInBlankExercisesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMultipleChoicesExercisesServlet</servlet-name>
+    <url-pattern>/servlet/GetMultipleChoicesExercisesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteExerciseServlet</servlet-name>
+    <url-pattern>/servlet/DeleteExerciseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExerciseImageUploadServlet</servlet-name>
+    <url-pattern>/servlet/ExerciseImageUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MultipleChoicesExerciseImageUpload</servlet-name>
+    <url-pattern>/servlet/MultipleChoicesExerciseImageUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadKnowledgeRelationServlet</servlet-name>
+    <url-pattern>/servlet/UploadKnowledgeRelationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddStuden</servlet-name>
+    <url-pattern>/servlet/AddStuden</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewPasswordServle</servlet-name>
+    <url-pattern>/servlet/NewPasswordServle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginI</servlet-name>
+    <url-pattern>/servlet/LoginI</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetKnowledgeRelationshipServlet</servlet-name>
+    <url-pattern>/servlet/GetKnowledgeRelationshipServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetKnowledgeRelationships</servlet-name>
+    <url-pattern>/servlet/GetKnowledgeRelationships</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FillInBlankExerciseImageServlet</servlet-name>
+    <url-pattern>/servlet/FillInBlankExerciseImageServlet</url-pattern>
+  </servlet-mapping>
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>UploadLetterCodeServlet</servlet-name>-->
+    <!--<url-pattern>/servlet/UploadLetterCodeServlet</url-pattern>-->
+  <!--</servlet-mapping>-->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

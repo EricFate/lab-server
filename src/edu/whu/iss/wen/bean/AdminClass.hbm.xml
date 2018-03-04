@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!--生成默认为class的数据库表 -->
+	<class name="edu.whu.iss.wen.bean.AdminClass" table="class" lazy="false">
+		<id name="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="region"/>
+		<property name="school"/>
+		<property name="grade"/>
+		<property name="sNumber"/>
+		<property name="imageURL"/>
+		<set name="students" cascade="delete" lazy="false" order-by="id asc">
+			<key column="acno"></key>
+			<one-to-many class="edu.whu.iss.bean.Student"/>
+		</set>
+		<set name="notices" cascade="delete" lazy="false" order-by="id asc">
+			<key column="acno"></key>
+			<one-to-many class="edu.whu.iss.wen.bean.Notice"></one-to-many>
+		</set>
+
+		<set name="collegeStudents" cascade="delete" table="collegeStudent_class" lazy="false">
+			<key column="acno"></key>
+			<many-to-many class="edu.whu.iss.sd.bean.CollegeStudent" column="csno" />
+		</set>
+		
+		<set name="courses" cascade="delete" table="course_class" lazy="false">
+			<key column="acno"/>
+			<many-to-many class="edu.whu.iss.wen.bean.Course" column="cno" />
+		</set>
+		<set name="requests" cascade="delete" lazy="false">
+			<key column="acid"/>
+			<one-to-many class="edu.whu.iss.bean.AddClassRequest" />
+		</set>
+		<many-to-one name="chatGroup" column="gid" unique="true" cascade="save-update"/>
+		<many-to-one name="teacher" column="tid" cascade="save-update"></many-to-one>
+	</class>
+
+</hibernate-mapping>

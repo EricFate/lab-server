@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="edu.whu.iss.bean.CourseLearning" table="courselearning">
+    		<id name="id" column="_id">
+    			<generator class="native"/>
+    		</id>
+    		<property name="duration" type="long"/>
+    		<property name="time" type="date"/>
+    		<many-to-one name="student" column="sno" cascade="save-update" class="edu.whu.iss.bean.Student"/>
+    		<many-to-one name="course" column="cno" cascade="save-update" class="edu.whu.iss.wen.bean.Course"/>
+    	</class>
+    </hibernate-mapping>

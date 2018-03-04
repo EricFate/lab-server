@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="edu.whu.iss.bean.ChatGroup" table="chatgroup" lazy="false">
+		<id name="id" column="_id">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="name" column="name"/>
+		<property name="imageURL" column="imageURL"/>
+	<one-to-one name="course" cascade="save-update"/>
+	<one-to-one name="adminClass" cascade="save-update"/>
+	<set name="userGroups" cascade="delete" lazy="false">
+		<key column="gid"/>
+		<one-to-many class="edu.whu.iss.bean.UserGroup"/>
+	</set>
+	<set name="notices" cascade="delete" lazy="false">
+		<key column="cgno"/>
+		<one-to-many class="edu.whu.iss.wen.bean.Notice"/>
+	</set>
+	</class>
+</hibernate-mapping>

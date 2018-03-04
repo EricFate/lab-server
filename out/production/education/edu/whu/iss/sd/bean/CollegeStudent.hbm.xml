@@ -1,0 +1,44 @@
+<?xml version="1.0"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+<hibernate-mapping>  
+    <!--生成默认为user的数据库表-->  
+    <class name="edu.whu.iss.sd.bean.CollegeStudent" lazy="false">  
+        <id name="id">  
+            <!-- 算法的核心思想是结合机器的网卡、当地时间、一个随机数来生成GUID -->  
+            <generator class="native"></generator>  
+        </id>  
+        <property name="username" type="string"></property>  
+        <property name="password" type="string"></property>
+        <property name="identity" type="string"></property>
+        <property name="nickname" type="string"></property>
+        <property name="email" type="string"></property>
+        <property name="number" type="string"></property>
+        <property name="realname" type="string"></property>
+        <property name="classname" type="string"></property>
+        <property name="region" type="string"></property>
+        <property name="school" type="string"></property>
+        <property name="phone" type="string"></property>
+        <property name="signature" type="string"></property>
+        <property name="imageURL" type="string"></property>
+        <property name="gender" type="string"></property>
+        <property name="major" type="string"></property>
+        <property name="introduction" type="string"></property>
+        <property name="token"/>
+		<set name="videos" inverse="false" cascade="delete" >
+			<key column="collegestudent_id"></key>
+			<one-to-many class="edu.whu.iss.sd.bean.Video" />
+		</set>
+		<set name="students" >
+			<key column="cno"/>
+			<one-to-many class="edu.whu.iss.bean.Student" />
+		</set>
+		
+		<set name="adminClass" table="collegeStudent_class" lazy="false">
+			<key column="csno"></key>
+			<many-to-many class="edu.whu.iss.wen.bean.AdminClass" column="acno" />
+		</set>
+    </class>  
+      
+</hibernate-mapping> 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="edu.whu.iss.wen.bean.KnowledgeRelationship" table="knowledge_relationship">
+  <id name="id">
+   <generator class="native"/>
+  </id>
+  <many-to-one cascade="save-update"
+   class="edu.whu.iss.wen.bean.Knowledge" column="knowledge1_id" name="knowledge1"/>
+  <many-to-one cascade="save-update"
+   class="edu.whu.iss.wen.bean.Knowledge" column="knowledge2_id" name="knowledge2"/>
+  <property name="relationship"/>
+ </class>
+</hibernate-mapping>

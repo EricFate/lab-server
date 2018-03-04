@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!--生成默认为exerciseCatagory的数据库表 -->
+	<class name="edu.whu.iss.wen.bean.ExerciseCatagory" table="exerciseCatagory" lazy="false">
+		<id name="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="name"></property>
+		<property name="accuracy"></property>
+		<property name="total"></property>
+		<property name="type"></property>
+		<many-to-one name="course" column="cno"
+			class="edu.whu.iss.wen.bean.Course" cascade="save-update">			
+		</many-to-one> 
+
+		<one-to-one name="lesson" class="edu.whu.iss.wen.bean.Lesson" property-ref="exerciseCatagory" cascade="save-update"></one-to-one>
+		<one-to-one name="chapter" class="edu.whu.iss.wen.bean.Chapter" property-ref="exerciseCatagory" cascade="save-update"></one-to-one>
+		<set name="exercises" lazy="false" table="exercise_category">
+			<key column="ecno"/>
+			<many-to-many class="edu.whu.iss.wen.bean.Exercise" column="eno"/>
+		</set>
+		<set name="exCateDetails" lazy="true" cascade="delete">
+			<key column="ecno"/>
+			<one-to-many class="edu.whu.iss.bean.PrivateExCateDetail"/>
+		</set>
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/education.iml" filepath="$PROJECT_DIR$/education.iml" />
+      <module fileurl="file://C:/GitDownload/server-sdk-java-master/server-sdk-java.iml" filepath="C:/GitDownload/server-sdk-java-master/server-sdk-java.iml" />
+    </modules>
+  </component>
+</project>

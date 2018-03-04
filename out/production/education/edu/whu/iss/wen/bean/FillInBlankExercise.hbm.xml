@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="edu.whu.iss.wen.bean.FillInBlankExercise" table="fill_in_blank_exercise">
+		<id name="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="question"></property>
+		<property name="answer"></property>
+		<property name="analysis"></property>
+		<property name="imageURL"></property>
+		<property name="finishedTimes"></property>
+		<property name="correctTimes"></property>
+		<many-to-one name="subject" column="subject_id" 
+			class="edu.whu.iss.wen.bean.ExerciseSubject" cascade="save-update"></many-to-one>
+		<set name="knowledges" table="fill_exercise_knowledge" cascade="delete" lazy="false" >
+			<key column="fxid"></key>
+			<many-to-many column="knowledge_id" class="edu.whu.iss.wen.bean.Knowledge"></many-to-many>
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!--生成默认为course的数据库表 -->
+	<class name="edu.whu.iss.wen.bean.Course" table="course">
+		<id name="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="name"></property>
+		<property name="focusNumber"></property>
+		<property name="coverURL"></property>
+		<property name="description"></property>
+		<property name="grade"></property>
+		<property name="chapterNumber"></property>
+		<property name="loadedNumber"></property>
+		<property name="subject"></property>
+		<property name="semester"></property>
+		<property name="avgRank" column="avgRank" type="float"
+			length="3" />
+		<set name="ranks" cascade="delete" lazy="false" order-by="time desc">
+			<key column="cno" />
+			<one-to-many class="edu.whu.iss.bean.Rank" />
+		</set>
+		<set name="students" table="student_course" inverse="true"
+			lazy="false">
+			<key column="cno" />
+			<many-to-many class="edu.whu.iss.bean.Student" column="stno" />
+		</set>
+		<many-to-one name="major" column="mno" class="edu.whu.iss.bean.Major"
+			cascade="save-update" />
+		<many-to-one name="teacher" column="myTeacher"
+			class="edu.whu.iss.wen.bean.Teacher" cascade="save-update">
+		</many-to-one>
+		<set name="chapters" cascade="delete" lazy="false" order-by="id asc">
+			<key column="myCourse" />
+			<one-to-many class="edu.whu.iss.wen.bean.Chapter" />
+		</set>
+		
+		
+		<set name="classes" table="course_class" lazy="false">
+			<key column="cno"></key>
+			<many-to-many class="edu.whu.iss.wen.bean.AdminClass" column="acno" />
+		</set>
+		<many-to-one name="chatGroup" column="gid" unique="true" cascade="delete"/>
+		<set name="learnings" cascade="delete" order-by="time desc">
+			<key column="cno"/>
+			<one-to-many class="edu.whu.iss.bean.CourseLearning"/>
+		</set>
+		<set name="totalLearnings" cascade="delete" >
+			<key column="cno"/>
+			<one-to-many class="edu.whu.iss.bean.TotalCourseLearning"/>
+		</set>
+		
+		<set name="exerciseCatagorys" cascade="delete" inverse="true" order-by="id asc"
+			lazy="false">
+			<key column="cno" />
+			<one-to-many class="edu.whu.iss.wen.bean.ExerciseCatagory" />
+		</set>
+	</class>
+
+</hibernate-mapping> 

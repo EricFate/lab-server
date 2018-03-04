@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="edu.whu.iss.bean.FriendRequest" table="friendrequest">
+		<id name="id" column="_id">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="uidFrom" column="uidFrom" length="100"/>
+		<property name="uidTo" column="uidTo" length="100"/>
+		<property name="remark" column="remark" length="100"/>
+		<property name="groupName" column="groupName" length="100"/>
+		<property name="nickname" column="nickname"/>
+		<property name="imageURL" column="imageURL"/>
+		<property name="message" column="message"/>
+	</class>
+</hibernate-mapping>

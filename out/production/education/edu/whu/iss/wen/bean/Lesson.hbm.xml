@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!--生成默认为lesson的数据库表 -->
+	<class name="edu.whu.iss.wen.bean.Lesson" table="lesson">
+		<id name="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="lessonName"></property>
+		<property name="knowledgePoint"></property>
+		<property name="description"></property>
+		<property name="videoURL"></property>
+		<property name="videoImageURL"></property>
+		<many-to-one name="chapter" column="myChapter"
+			class="edu.whu.iss.wen.bean.Chapter" cascade="save-update">			
+		</many-to-one> 
+		
+		
+		<many-to-one name="exerciseCatagory" class="edu.whu.iss.wen.bean.ExerciseCatagory" cascade="save-update" column="ecno"/>
+	</class>
+
+</hibernate-mapping>

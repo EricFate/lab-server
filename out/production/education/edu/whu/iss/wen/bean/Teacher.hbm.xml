@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!--生成默认为teacher的数据库表 -->
+	<class name="edu.whu.iss.wen.bean.Teacher" table="teacher" lazy="false">
+		<id name="id">
+			<!-- 算法的核心思想是结合机器的网卡、当地时间、一个随机数来生成GUID -->
+			<generator class="native"></generator>
+		</id>
+		<property name="identity"></property>
+		<property name="username"></property>
+		<property name="password"></property>
+		<property name="realname"></property>
+		<property name="gender"></property>
+		<property name="region"></property>
+		<property name="rank"></property>
+		<property name="subject"></property>
+		<property name="phone"></property>
+		<property name="email"></property>
+		<property name="signature"></property>
+		<property name="imageURL"></property>
+		<property name="token"></property>
+		<property name="school"></property>
+		<set name="courses" cascade="delete" order-by="id desc" lazy="false">
+			<key column="myTeacher"></key>
+			<one-to-many class="edu.whu.iss.wen.bean.Course"/>
+		</set>
+		<set name="classes" cascade="delete" order-by="id desc" lazy="false">
+			<key column="tid"></key>
+			<one-to-many class="edu.whu.iss.wen.bean.AdminClass"/>
+		</set>
+		
+		
+	</class>
+
+</hibernate-mapping> 

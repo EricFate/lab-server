@@ -1,0 +1,89 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+	<!--<property name="hibernate.connection.provider_class">-->
+		<!--org.hibernate.c3p0.internal.C3P0ConnectionProvider-->
+	<!--</property>-->
+	<!--<property name="hibernate.c3p0.timeout">60</property>-->
+	<!--<property name="hibernate.c3p0.acquire_increment">2</property>-->
+	<!--<property name="hibernate.c3p0.min_size">10</property>-->
+	<property name="autoCommitOnClose">true</property>
+	<!-- 
+		<property name="hibernate.c3p0.max_size">20</property>
+		<property name="automaticTestTable">Test</property>
+		<property name="hibernate.c3p0.max_statements">100</property>
+		<property name="hibernate.c3p0.idle_test_period">120</property>
+		<property name="c3p0.testConnectionOnCheckoUT">true</property>
+		<property name="C3P0.idleConnectionTestPeriod">180</property>
+		<property name="c3p0.maxIdleTime">25000</property>
+		<property name="c3p0.idle_test_period">120</property>
+	-->
+	<property name="hibernate.connection.driver_class">
+		com.mysql.jdbc.Driver
+	</property>
+	<property name="hibernate.connection.url">
+		jdbc:mysql:///users
+	</property>
+	<property name="hibernate.connection.username">root</property>
+	<property name="hibernate.connection.password">
+		thefateofno7
+	</property>
+	<property name="hibernate.dialect">
+		org.hibernate.dialect.MySQLDialect
+	</property>
+	<!-- 
+		<property name="hibernate.show_sql">true</property>
+		<property name="format_sql">true</property>
+	-->
+	<property name="hbm2ddl.auto">update</property>
+	<property name="hibernate.current_session_context_class">
+		thread
+	</property>
+	<!-- 
+		<property name="myeclipse.connection.profile">MyEclipse Derby</property>
+		<property name="connection.url">jdbc:derby://localhost:1527/myeclipse</property>
+		<property name="connection.username">classiccars</property>
+		<property name="connection.password">myeclipse</property>
+		<property name="connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	-->
+	<mapping resource="edu/whu/iss/bean/Answer.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/Issue.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/Student.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/Subject.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/Rank.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/Roster.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/RosterGroup.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/FriendRequest.hbm.xml" />
+	<mapping resource="edu/whu/iss/wen/bean/Chapter.hbm.xml" />
+	<mapping resource="edu/whu/iss/wen/bean/Course.hbm.xml" />
+	<mapping resource="edu/whu/iss/wen/bean/Lesson.hbm.xml" />
+	<mapping resource="edu/whu/iss/wen/bean/Teacher.hbm.xml" />
+	<mapping resource="edu/whu/iss/sd/bean/CollegeStudent.hbm.xml" />
+	<mapping resource="edu/whu/iss/sd/bean/Video.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/Major.hbm.xml" />
+	<mapping resource="edu/whu/iss/wen/bean/AdminClass.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/ChatGroup.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/CourseLearning.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/MessageRecord.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/TotalCourseLearning.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/TotalMessageRecord.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/TempMesage.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/UserGroup.hbm.xml" />
+	<mapping resource="edu/whu/iss/lu/bean/Parent.hbm.xml" />
+	<mapping resource="edu/whu/iss/wen/bean/Notice.hbm.xml" />
+	<mapping resource="edu/whu/iss/wen/bean/Exercise.hbm.xml" />
+	<mapping resource="edu/whu/iss/wen/bean/ExerciseCatagory.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/PrivateExCateDetail.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/PrivateExDetail.hbm.xml" />
+	<mapping resource="edu/whu/iss/bean/AddClassRequest.xml" />
+	<mapping resource="edu/whu/iss/wen/bean/Knowledge.hbm.xml"/>
+	<mapping resource="edu/whu/iss/wen/bean/ExerciseSubject.hbm.xml"/>
+	<mapping resource="edu/whu/iss/wen/bean/FillInBlankExercise.hbm.xml"/>
+	<mapping resource="edu/whu/iss/wen/bean/MultipleChoicesExercise.hbm.xml"/>
+	<mapping resource="edu/whu/iss/wen/bean/KnowledgeRelationship.hbm.xml" />
+</session-factory>
+</hibernate-configuration>

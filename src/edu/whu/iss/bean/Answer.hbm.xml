@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="edu.whu.iss.bean.Answer" table="answer" lazy="false">
+		<id name="id" column="aid">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="agree" column="agree"></property>
+		<property name="time" column="time" type="date" ></property>
+		<property name="anonymous" column="anonymous"></property>
+		<property name="content" column="content" length="500"></property>
+		<property name="uno" column="uno"/>
+		<many-to-one name="issue" column="ino" cascade="save-update"
+			class="edu.whu.iss.bean.Issue"></many-to-one>
+	</class>
+</hibernate-mapping>

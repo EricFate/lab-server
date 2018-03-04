@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!--生成默认为choiceQuestion的数据库表 -->
+	<class name="edu.whu.iss.wen.bean.Exercise" table="exercise">
+		<id name="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="answer"></property>
+		<property name="tendency"></property>
+		<property name="type"></property>
+		<property name="title"></property>
+		<property name="optionA"></property>
+		<property name="optionB"></property>
+		<property name="optionC"></property>
+		<property name="optionD"></property>
+		<property name="analysis"></property>
+		<property name="number"></property>
+		<property name="accuracy"></property>
+		<property name="difficulty"></property>
+		
+		<set name="exerciseCatagory" inverse="true" table="exercise_category">
+			<key column="eno"/>
+			<many-to-many class="edu.whu.iss.wen.bean.ExerciseCatagory" lazy="false" column="ecno"/>
+		</set>
+
+		<set name="exDetails" lazy="false">
+			<key column="eno"/>
+			<one-to-many class="edu.whu.iss.bean.PrivateExDetail"/>
+		</set>
+	</class>
+
+</hibernate-mapping>

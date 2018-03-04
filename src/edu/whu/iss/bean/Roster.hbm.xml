@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="edu.whu.iss.bean.Roster" table="roster" lazy="false">
+		<id name="id" column="_id">
+			<generator class="native"/>
+		</id>
+		<property name="remark" column="remark" length="50"/>
+		<property name="uid" column="uid" length="50" />
+		<property name="signature" column="signature"/>
+		<property name="imageURL" column="imageURL"/>
+		<property name="uno" column="uno" length="50"/>
+		<many-to-one name="group" column="gno"
+			class="edu.whu.iss.bean.RosterGroup" cascade="save-update"/>
+	</class>
+</hibernate-mapping>

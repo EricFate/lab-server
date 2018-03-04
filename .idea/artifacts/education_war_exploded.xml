@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="education:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/education_war_exploded</output-path>
+    <root id="archive" name="education_war exploded.war">
+      <element id="javaee-facet-resources" facet="education/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="education" />
+          <element id="module-output" name="server-sdk-java" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="server" />
+          <element id="library" level="module" name="commons-codec-1.4.jar" module-name="server-sdk-java" />
+          <element id="library" level="module" name="gson-2.2.4.jar" module-name="server-sdk-java" />
+        </element>
+        <element id="module-output" name="server-sdk-java" />
+        <element id="module-output" name="education" />
+      </element>
+    </root>
+  </artifact>
+</component>

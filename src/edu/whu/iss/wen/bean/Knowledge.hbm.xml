@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="edu.whu.iss.wen.bean.Knowledge" table="knowledge">
+		<id name="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="label"></property>
+		<property name="description"></property>
+		<property name="totalAccuracy"></property>
+		<property name="videoURL"></property>
+		<many-to-one name="subject" column="subject_id"
+			class="edu.whu.iss.wen.bean.ExerciseSubject" cascade="save-update"></many-to-one>
+		<set name="fillInBlankExercises" table="fill_exercise_knowledge" cascade="delete" lazy="false">
+			<key column="knowledge_id"></key>
+			<many-to-many class="edu.whu.iss.wen.bean.FillInBlankExercise" column="fxid"></many-to-many>
+		</set>
+		<set name="multipleChoicesExercises" table="multiple_exercise_knowledge" cascade="delete" lazy="false">
+			<key column="knowledge_id"></key>
+			<many-to-many class="edu.whu.iss.wen.bean.MultipleChoicesExercise" column="mxid"></many-to-many>
+		</set>
+		<set name="relationships1" cascade="delete" lazy="false">
+			<key column="knowledge1_id"></key>
+			<one-to-many class="edu.whu.iss.wen.bean.KnowledgeRelationship"/>
+		</set>
+		<set name="relationships2" cascade="delete" lazy="false">
+			<key column="knowledge2_id"></key>
+			<one-to-many class="edu.whu.iss.wen.bean.KnowledgeRelationship"/>
+		</set>
+		<set name="weakStudents" table="student_knowledge" cascade="save-update, delete" lazy="false">
+			<key column="kid"></key>
+			<many-to-many class="edu.whu.iss.bean.Student" column="sid"></many-to-many>
+		</set>
+	</class>
+</hibernate-mapping>
